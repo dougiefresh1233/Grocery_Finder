@@ -11,7 +11,7 @@
     tools:context="com.example.dougl.grocery_finder.Test_API_Activity">
 
     <TextView
-        android:text="TextView"
+        android:text="Result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/responseView"
@@ -25,10 +25,22 @@
         android:text="Test API"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="76dp"
         android:id="@+id/runButton"
         android:backgroundTint="?attr/colorPrimary"
-        style="@style/Widget.AppCompat.Button.Colored" />
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_above="@+id/responseView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Apple"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/inputText" />
 </RelativeLayout>
